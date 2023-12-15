@@ -1,0 +1,17 @@
+@import './variables';
+
+// Media queries para diferentes tamaños de pantalla
+
+// Tamaño de pantalla pequeña (móviles)
+@media screen and (max-width: 767px) {
+    // Agrega reglas de estilo para móviles
+}
+
+// Tamaño de pantalla mediano (tabletas)
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+// Tamaño de pantalla grande (escritorios)
+@media screen and (min-width: 1024px) {
+    // Agrega reglas de estilo para escritorios
+}

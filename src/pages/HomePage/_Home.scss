@@ -1,0 +1,40 @@
+@import '../../styles/Utils/variables';
+
+.home-container {
+    text-align: center;
+
+    .home-img {
+        max-width: 30%;
+        height: auto;
+    }
+
+    .home-name {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+
+    .home-professions {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    .home-description {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .home-rrss {
+        margin-top: 20px;
+
+        .home-rrss-icon {
+            font-size: 2rem;
+            margin: 0 10px;
+            color: $font-color;
+            transition: color 0.3s ease;
+        }
+
+        .home-rrss-icon:hover {
+            color: $accent-color;
+        }
+    }
+}

@@ -1,40 +1,73 @@
 @import '../../styles/Utils/variables';
 
+body {
+    font-family: 'Afacad', sans-serif;
+    font-size: 16px;
+    color: $font-color;
+    line-height: 1.6;
+    background: linear-gradient(to right, #2A2C2F 17%, #425562 100%);
+}
+
 .home-container {
     text-align: center;
 
-    .home-img {
-        max-width: 30%;
-        height: auto;
-    }
+    .home-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
 
-    .home-name {
-        font-size: 2rem;
-        margin-top: 10px;
-    }
-
-    .home-professions {
-        font-size: 1.5rem;
-        margin-top: 10px;
-    }
-
-    .home-description {
-        font-size: 1rem;
-        margin-top: 10px;
-    }
-
-    .home-rrss {
-        margin-top: 20px;
-
-        .home-rrss-icon {
-            font-size: 2rem;
-            margin: 0 10px;
-            color: $font-color;
-            transition: color 0.3s ease;
+        .home-avatar img {
+            width: 35%;
+            margin-left: 500px;
+            margin-top: 130px;
         }
+        .home-details {
+            text-align: left;
+            // margin-top: 100px;
+            margin-right: 300px;
+            width: 100vw;
 
-        .home-rrss-icon:hover {
-            color: $accent-color;
+            .home-name {
+                font-size: 3.5rem;
+                margin-bottom: -30px;
+                letter-spacing: 0.3rem;
+            }
+
+            .home-typed {
+                font-size: 2rem;
+                width: 100%;
+            }
+
+            #typed {
+                font-size: 2rem;
+                font-style: italic;
+                color: $accent-color;
+            }
+
+            .typed-cursor {
+                visibility: hidden;                
+            }
+
+            .home-description {
+                font-size: 1.2rem;
+                margin-top: -40px;
+            }
+
+            .home-rrss {
+                // margin-top: 20px;
+
+                .home-rrss-icon {
+                    font-size: 2rem;
+                    margin: 0 10px;
+                    color: $font-color;
+                    transition: color 0.3s ease;
+                }
+
+                .home-rrss-icon:hover {
+                    color: $accent-color;
+                }
+            }
         }
     }
 }

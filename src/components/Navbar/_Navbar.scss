@@ -14,11 +14,22 @@
     align-items: flex-start;
     padding: 20px;
 
+    // &:after {
+    //         content: '';
+    //         position: absolute;
+    //         left: 320px;
+    //         top: 0;
+    //         bottom: 0;
+    //         width: 1px;
+    //         background-color: $accent-color;
+    // }
+    
     .navbar-links {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        
 
         a {
             text-decoration: none;

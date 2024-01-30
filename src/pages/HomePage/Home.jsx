@@ -32,12 +32,9 @@ const Home = () => {
                     <img src="https://res.cloudinary.com/dizd9f3ky/image/upload/v1702648552/Praga_122_phegkz.jpg" alt="Profile_Prague" className="home-img" />
                 </div>
                 <div className="home-details">
-                    <h3 className="home-name">Jesus Perez</h3>
-                    <h4 className="home-typed">I`m a <span id="typed"></span></h4>
-                    <p className="home-description">Passionate Full Stack Developer with a love for photography, 3D art, and a strong affinity for music and movies. I´m dedicated to
-                        crafting smooth and engaging digital experiences. I blend the art of design with coding expertise to turn creative ideas into
-                        live, user-friendly solutions. Let`s bring your visions to life in the digital world!
-                    </p>
+                    <h3 className="home-name">JESUS PEREZ</h3>
+                    {/* <p className="home-description">I am a creative</p> */}
+                    <h4 className="home-typed"><span id="typed"></span></h4>
                     <div className="home-rrss">
                         <a href="https://github.com/jesusp1490" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faGithub} className="home-rrss-icon" />

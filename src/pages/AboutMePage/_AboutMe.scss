@@ -1,0 +1,77 @@
+@import '../../styles/Utils/variables';
+
+.about-me-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 315px;
+    position: relative;
+    height: 100vh;
+
+    .about-me-image-bg {
+        position: absolute;
+        left: 0;
+        height: 100vh;
+
+        img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            transform: scaleX(-1);
+        }
+    }
+
+    .about-me-card {
+        background: rgba(42, 44, 47, 0.35);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.7px);
+        padding: 30px;
+        margin: 100px;
+        width: 35%;
+        height: 75%;
+        z-index: 10;
+
+        .about-me-text {
+            text-align: left;
+            padding: 15px;
+
+            h2 {
+                color: $accent-color;
+                font-size: 2rem;
+            }
+
+            p {
+                color: $font-color;
+                font-size: 1rem;
+            }
+        }
+
+        .about-me-skills {
+            padding: 15px;
+
+            h2 {
+                color: $accent-color;
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+
+            .skills-logos {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 10px;
+                gap: 30px;
+                
+                .skill-icon {
+                    color: #EEEEEE; 
+                    transition: color 0.3s; 
+
+                    &:hover {
+                        color: #EA9215; 
+                    }
+                }
+            }
+        }
+    }
+}

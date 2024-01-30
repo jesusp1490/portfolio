@@ -14,15 +14,16 @@
     align-items: flex-start;
     padding: 20px;
 
-    // &:after {
-    //         content: '';
-    //         position: absolute;
-    //         left: 320px;
-    //         top: 0;
-    //         bottom: 0;
-    //         width: 1px;
-    //         background-color: $accent-color;
-    // }
+    &:after {
+            content: '';
+            position: absolute;
+            left: 320px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: $accent-color;
+            opacity: 0.2;
+    }
     
     .navbar-links {
         display: flex;

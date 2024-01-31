@@ -30,7 +30,6 @@ const AboutMe = () => {
             <FontAwesomeIcon icon={faGithub} className="skill-icon" size="4x" /> 
             <FontAwesomeIcon icon={faNpm} className="skill-icon" size="4x" />
             <FontAwesomeIcon icon={faMdb} className="skill-icon" size="4x" />
-
           </div>
         </div>
       </div>

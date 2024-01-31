@@ -1,0 +1,16 @@
+@import '../../styles/Utils/variables';
+
+.services-section {
+    margin-left: 320px; // Ajusta según el ancho de tu navbar
+    // padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // gap: 20px;
+}
+
+.services-title {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: $accent-color;
+    // Estilos adicionales para tu título aquí
+}

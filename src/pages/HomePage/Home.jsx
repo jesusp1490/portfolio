@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import Navbar from "../../components/Navbar/Navbar";
 import './_Home.scss';
+import { Button } from "@mui/material";
+import cvFile from '../../assets/Jesus Perez_CV_esp.pdf'; 
 
 const Home = () => {
 
@@ -46,6 +48,11 @@ const Home = () => {
                             <FontAwesomeIcon icon={faInstagram} className="home-rrss-icon" />
                         </a>
                     </div>
+
+                    <Button variant="contained" href={cvFile} download="Jesus Perez_CV_esp.pdf">
+                        Download Resume
+                    </Button>
+
                 </div>
             </div>
         </div>

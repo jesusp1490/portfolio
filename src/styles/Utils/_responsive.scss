@@ -1,17 +1,36 @@
 @import './variables';
 
-// Media queries para diferentes tamaños de pantalla
-
-// Tamaño de pantalla pequeña (móviles)
-@media screen and (max-width: 767px) {
-    // Agrega reglas de estilo para móviles
+// Mixin para pantallas pequeñas (mobile)
+@mixin mobile {
+    @media screen and (max-width: $small-screen) {
+        @content;
+    }
 }
 
-// Tamaño de pantalla mediano (tabletas)
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+// Mixin para tabletas
+@mixin tablet {
+    @media screen and (min-width: $tablet-screen) {
+        @content;
+    }
 }
 
-// Tamaño de pantalla grande (escritorios)
-@media screen and (min-width: 1024px) {
-    // Agrega reglas de estilo para escritorios
+// Mixin para pantallas normales (1080p)
+@mixin normal {
+    @media screen and (min-width: $normal-screen) {
+        @content;
+    }
+}
+
+// Mixin para pantallas grandes (2k)
+@mixin large {
+    @media screen and (min-width: $large-screen) {
+        @content;
+    }
+}
+
+// Mixin para pantallas extra grandes
+@mixin extra-large {
+    @media screen and (min-width: $extra-large-screen) {
+        @content;
+    }
 }

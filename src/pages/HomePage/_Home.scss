@@ -1,6 +1,5 @@
 @import '../../styles/Utils/variables';
 
-
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -23,26 +22,22 @@ body {
             margin-left: 520px;
             margin-top: 50px;
             clip-path: polygon(18% 0, 85% 0, 68% 100%, 0% 100%);
-
         }
+
         .home-details {
             text-align: left;
-            // margin-left: 350px;
             width: 100vw;
+
+            .home-name,
+            #typed,
+            .home-rrss-icon {
+                transition: all 0.3s ease;
+            }
 
             .home-name {
                 font-size: 5rem;
                 margin-bottom: -50px;
                 letter-spacing: 0.3rem;
-            }
-
-            .home-description {
-                font-size: 2rem;
-                font-weight: lighter;
-                font-style: italic;
-                letter-spacing: 0.2rem;
-                margin-bottom: -40px;
-                margin-right: 250px;
             }
 
             #typed {
@@ -51,24 +46,46 @@ body {
                 width: 80%;
             }
 
-            .typed-cursor {
-                visibility: hidden;                
-            }
-
             .home-rrss {
                 margin-bottom: 30px;
-                
+
                 .home-rrss-icon {
                     font-size: 2rem;
                     margin: 0 10px;
                     color: $font-color;
-                    transition: color 0.3s ease;
-                }
-
-                .home-rrss-icon:hover {
-                    color: $accent-color;
                 }
             }
+        }
+    }
+}
+
+// Media query para pantallas menores a 768px
+@media screen and (max-width: 768px) {
+    .home-content {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .home-avatar img {
+        display: none; // Oculta la imagen en pantallas pequeñas
+    }
+
+    .home-details {
+        text-align: center;
+        margin: 20px 0;
+
+        .home-name {
+            font-size: 3rem;
+            margin-bottom: 0;
+        }
+
+        #typed {
+            font-size: 2rem;
+        }
+
+        .home-rrss-icon {
+            font-size: 1.5rem;
         }
     }
 }

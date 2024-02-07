@@ -5,7 +5,7 @@ import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-
 import Navbar from "../../components/Navbar/Navbar";
 import './_Home.scss';
 import { Button } from "@mui/material";
-import cvFile from '../../assets/Jesus Perez_CV_esp.pdf'; 
+import cvFile from '../../assets/Jesus Perez_CV_esp.pdf';
 
 const Home = () => {
 
@@ -35,7 +35,6 @@ const Home = () => {
                 </div>
                 <div className="home-details">
                     <h3 className="home-name">JESUS PEREZ</h3>
-                    {/* <p className="home-description">I am a creative</p> */}
                     <h4 className="home-typed"><span id="typed"></span></h4>
                     <div className="home-rrss">
                         <a href="https://github.com/jesusp1490" target="_blank" rel="noopener noreferrer">
@@ -52,7 +51,6 @@ const Home = () => {
                     <Button variant="contained" href={cvFile} download="Jesus Perez_CV_esp.pdf">
                         Download Resume
                     </Button>
-
                 </div>
             </div>
         </div>

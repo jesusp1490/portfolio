@@ -1,3 +1,4 @@
+// _Home.scss
 @import '../../styles/Utils/variables';
 
 body {
@@ -61,31 +62,107 @@ body {
 
 // Media query para pantallas menores a 768px
 @media screen and (max-width: 768px) {
-    .home-content {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 30px;
-    }
-
-    .home-avatar img {
-        display: none; // Oculta la imagen en pantallas pequeñas
-    }
-
-    .home-details {
+    .home-container {
         text-align: center;
-        margin: 20px 0;
 
-        .home-name {
-            font-size: 3rem;
-            margin-bottom: 0;
+        .home-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 80px;
+            height: auto;
+
+            .home-avatar img {
+                display: none;
+            }
+
+            .home-details {
+                text-align: left;
+                width: 90vw;
+
+                .home-name,
+                #typed,
+                .home-rrss-icon {
+                    transition: all 0.3s ease;
+                }
+
+                .home-name {
+                    font-size: 3.5rem;
+                    margin-bottom: 5px;
+                    letter-spacing: 0.3rem;
+                }
+
+                #typed {
+                    font-size: 2rem;
+                    color: $accent-color;
+                    width: 10%;
+                }
+
+                .home-rrss {
+                    margin-bottom: 30px;
+
+                    .home-rrss-icon {
+                        font-size: 2rem;
+                        margin: 0 10px;
+                        color: $font-color;
+                    }
+                }
+            }
         }
+    }
+}
 
-        #typed {
-            font-size: 2rem;
-        }
 
-        .home-rrss-icon {
-            font-size: 1.5rem;
+@media screen and (min-width: 1920px) {
+    .home-container {
+        text-align: center;
+
+        .home-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 150px;
+            margin-left: 200px;
+
+            .home-avatar img {
+                width: 600px;
+                margin-left: 620px;
+                margin-top: 50px;
+                clip-path: polygon(18% 0, 85% 0, 68% 100%, 0% 100%);
+            }
+
+            .home-details {
+                text-align: left;
+                width: 100vw;
+
+                .home-name,
+                #typed,
+                .home-rrss-icon {
+                    transition: all 0.3s ease;
+                }
+
+                .home-name {
+                    font-size: 5rem;
+                    margin-bottom: -50px;
+                    letter-spacing: 0.3rem;
+                }
+
+                #typed {
+                    font-size: 4rem;
+                    color: $accent-color;
+                    width: 80%;
+                }
+
+                .home-rrss {
+                    margin-bottom: 30px;
+
+                    .home-rrss-icon {
+                        font-size: 2rem;
+                        margin: 0 10px;
+                        color: $font-color;
+                    }
+                }
+            }
         }
     }
 }

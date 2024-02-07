@@ -1,10 +1,21 @@
 @import '../../styles/Utils/variables';
 
 .services-section {
-    margin-left: 320px; 
+    margin-left: 320px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+
+    @media screen and (max-width: 768px) {
+        margin-left: 0;
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
 }
 
 .services-title {
@@ -12,6 +23,10 @@
     text-align: left;
     color: $accent-color;
     font-size: 2rem;
-    margin-bottom: 5rem; 
+    margin-bottom: 5rem;
     margin-left: 3rem;
+
+    @media screen and (max-width: 768px) {
+        margin-left: 0;
+    }
 }

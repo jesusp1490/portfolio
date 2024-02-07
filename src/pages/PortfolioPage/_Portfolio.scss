@@ -1,15 +1,41 @@
 @import '../../styles/Utils/variables';
 
 .portfolio-container {
-    margin-left: 150px; 
+    margin-left: 150px;
+
+    @media screen and (max-width: 768px) {
+        margin-left: 0;
+    }
+
+    
 }
 
 .portfolio-title {
     text-align: left;
     color: $accent-color;
     font-size: 2rem;
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
     margin-left: 14rem;
+
+    @media screen and (max-width: 768px) {
+        margin-left: 0;
+    }
+    
 }
 
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 60px;
+    padding: 0 20px;
+    margin-left: 200px;
 
+    @media screen and (max-width: 768px) {
+        margin-left: 0;
+    }
+
+    @media screen and (min-width: 1920px) {
+        grid-template-columns: repeat(5, 1fr);
+
+    }
+}

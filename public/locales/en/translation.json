@@ -1,0 +1,17 @@
+{
+  "home": {
+    "title": "JESUS PEREZ",
+    "roles": ["Full Stack Developer", "Video Games Developer", "Photographer"],
+    "downloadResume": "Download Resume",
+    "social": {
+      "github": "Visit my GitHub profile",
+      "linkedin": "Connect with me on LinkedIn",
+      "instagram": "Follow me on Instagram"
+    }
+  },
+  "aboutMe": {
+    "title": "About me",
+    "description": "I'm Jesús Pérez, a passionate software developer who loves solving complex problems with creative solutions. I started my journey in programming some years ago, and it has been a path filled with constant learning and improvement. I specialize in frontend development, where I focus on creating user-friendly interfaces, and in backend development, where I work on the essential parts that keep applications and websites running smoothly.",
+    "skillsTitle": "Skills"
+  }
+}

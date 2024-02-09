@@ -19,7 +19,7 @@ const Contact = () => {
           <div className="contact-rrss">
             <a href="https://github.com/jesusp1490" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} className="contact-rrss-icon" />
-            </a>
+            </a>       
             <a href="https://www.linkedin.com/in/jesusperez14/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedinIn} className="contact-rrss-icon" />
             </a>

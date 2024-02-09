@@ -5,6 +5,7 @@ import Services from './pages/ServicesPage/Services';
 import Portfolio from './pages/PortfolioPage/Portfolio';
 import Contact from './pages/ContactPage/Contact';
 import { ThemeProvider } from '@mui/material/styles';
+import './data/i18n';
 import theme from './data/theme'
 
 

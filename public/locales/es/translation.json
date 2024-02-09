@@ -1,0 +1,17 @@
+{
+  "home": {
+    "title": "JESUS PEREZ",
+    "roles": ["Desarrollador Full Stack", "Desarrollador de Videojuegos", "Fotógrafo"],
+    "downloadResume": "Descargar Currículum",
+    "social": {
+      "github": "Visita mi perfil de GitHub",
+      "linkedin": "Conéctate conmigo en LinkedIn",
+      "instagram": "Sígueme en Instagram"
+    }
+  },
+  "aboutMe": {
+    "title": "Sobre mí",
+    "description": "Soy Jesús Pérez, un desarrollador de software apasionado que ama resolver problemas complejos con soluciones creativas. Comencé mi viaje en la programación hace algunos años, y ha sido un camino lleno de aprendizaje constante y mejora. Me especializo en el desarrollo frontend, donde me enfoco en crear interfaces amigables para el usuario, y en el desarrollo backend, donde trabajo en las partes esenciales que mantienen las aplicaciones y sitios web funcionando sin problemas.",
+    "skillsTitle": "Habilidades"
+  }
+}

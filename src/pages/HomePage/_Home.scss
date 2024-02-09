@@ -6,8 +6,11 @@ body {
     font-size: 16px;
     color: $font-color;
     line-height: 1.6;
-    background: linear-gradient(to right, #2A2C2F 17%, #425562 100%);
+    background: linear-gradient(to right, #2A2C2F 17%, #425562 100%) no-repeat center center fixed;
+    background-size: contain;
 }
+
+
 
 .home-container {
     text-align: center;

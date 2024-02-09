@@ -58,14 +58,23 @@ const Contact = () => {
               label="Name"
               variant="filled"
               color="accent"
-              sx={{ width: '90%', fontSize: '2rem' }}
+              style={{ width: '100%', fontSize: '2rem', 
+                '@media (max-width: 768px)': {
+                  width: '100%',
+                },
+              }}
             />
             <TextField
               id="email-field"
               label="Email"
               variant="filled"
               color="accent"
-              sx={{ width: '90%', fontSize: '2rem' }}
+              style={{
+                width: '100%', fontSize: '2rem',
+                '@media (max-width: 768px)': {
+                  width: '100%',
+                },
+              }}
 
             />
             <TextField
@@ -76,7 +85,13 @@ const Contact = () => {
               multiline
               rows={8}
               color="accent"
-              sx={{ width: '90%', fontSize: '2rem' }}
+              style={{
+                width: '100%', fontSize: '2rem',
+                '@media (max-width: 768px)': {
+                  width: '100%',
+                  marginRight: '100px',
+                },
+              }}
             />
             <Button variant="contained" sx={{ mt: 2, width: '40%', fontSize: '1rem' }} color="accent">
               Submit

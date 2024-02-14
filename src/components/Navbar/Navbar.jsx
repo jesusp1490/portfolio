@@ -26,6 +26,9 @@ const Navbar = () => {
                 <div className="menu-icon-bar"></div>
             </div>
             <div className={`navbar-container ${isMenuOpen ? 'menu-open' : ''}`}>
+            
+                {/* <img src='https://res.cloudinary.com/dizd9f3ky/image/upload/v1707915006/LogoB_ctfse8.png' className='navbar-logo'/> */}
+            
                 <div className="navbar-links">
                     <Link to="/" className={location.pathname === '/' ? 'selected' : ''} onClick={closeMenu}>
                         <FontAwesomeIcon icon={faHome} className="navbar-icon" /> {t('navbar.home')}

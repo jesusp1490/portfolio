@@ -2,7 +2,7 @@
   "home": {
     "title": "JESUS PEREZ",
     "roles": ["Desarrollador Full Stack", "Desarrollador de Videojuegos", "Fotógrafo"],
-    "downloadResume": "Descargar Currículum",
+    "downloadResume": "Descargar CV",
     "social": {
       "github": "Visita mi perfil de GitHub",
       "linkedin": "Conéctate conmigo en LinkedIn",
@@ -13,5 +13,78 @@
     "title": "Sobre mí",
     "description": "Soy Jesús Pérez, un desarrollador de software apasionado que ama resolver problemas complejos con soluciones creativas. Comencé mi viaje en la programación hace algunos años, y ha sido un camino lleno de aprendizaje constante y mejora. Me especializo en el desarrollo frontend, donde me enfoco en crear interfaces amigables para el usuario, y en el desarrollo backend, donde trabajo en las partes esenciales que mantienen las aplicaciones y sitios web funcionando sin problemas.",
     "skillsTitle": "Habilidades"
+  },
+  "services": {
+    "title": "Servicios",
+    "items": [
+      {
+        "title": "Control de Versiones con Git",
+        "description": "Mejora la eficiencia del flujo de trabajo con control de versiones avanzado y colaborativo utilizando Git.",
+        "icon": "faGithub"
+      },
+      {
+        "title": "Diseño de Aplicaciones",
+        "description": "Diseños de aplicaciones intuitivos y centrados en el usuario con interfaces elegantes y experiencias de usuario optimizadas.",
+        "icon": "faMobileButton"
+      },
+      {
+        "title": "Desarrollo Web",
+        "description": "Desarrollo web moderno para crear sitios dinámicos, receptivos y orientados al rendimiento.",
+        "icon": "faCode"
+      },
+      {
+        "title": "Desarrollo Backend",
+        "description": "Soluciones backend robustas y escalables que impulsan la lógica y la gestión de datos de sus aplicaciones.",
+        "icon": "faDatabase"
+      },
+      {
+        "title": "Fotografía",
+        "description": "Servicios profesionales de fotografía que capturan la esencia de su marca y mejoran la narración visual.",
+        "icon": "faCamera"
+      },
+      {
+        "title": "Trabajo Freelance",
+        "description": "Servicios de desarrollo y diseño flexibles y adaptables para llevar sus proyectos al siguiente nivel.",
+        "icon": "faLaptop"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "Lucky": {
+      "title": "Lucky",
+      "description": "\"Lucky\" es una aplicación para adoptar animales. En esta aplicación, tanto los usuarios que desean adoptar una mascota como los refugios de animales pueden registrarse para mostrar los animales disponibles para su adopción. De esta manera, los usuarios pueden elegir la mascota que mejor se adapte a ellos. La aplicación ha sido desarrollada utilizando React, Node.js, Express.js y MongoDB."
+    },
+    "GameStore": {
+      "title": "GameStore",
+      "description": "\"GameStore\" es una pequeña tienda de videojuegos donde los usuarios pueden ingresar, registrarse y \"comprar\" juegos. Pueden explorar juegos mejor calificados y filtrarlos por precio. Está construido con JavaScript, Node.js, Express.js y MongoDB."
+    },
+    "BMW - Página de Aterrizaje": {
+      "title": "BMW - Página de Aterrizaje",
+      "description": "\"BMW - Página de Aterrizaje\" es un proyecto académico donde he creado una réplica de la página de aterrizaje de BMW utilizando HTML y SASS."
+    },
+    "Slack - Página de Aterrizaje": {
+      "title": "Slack - Página de Aterrizaje",
+      "description": "\"Slack - Página de Aterrizaje\" es un proyecto académico donde he creado una réplica de la página de aterrizaje de Slack utilizando HTML y CSS."
+    }
+  },
+  "contact": {
+    "title": "Contáctame",
+    "description": "¿Tienes algún proyecto en mente o necesitas algún servicio de mantenimiento o fotografía? ¡No dudes en contactarme!",
+    "downloadResume": "Descargar CV",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "submit": "Enviar"
+  },
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "services": "Servicios",
+    "portfolio": "Portafolio",
+    "contact": "Contacto"
+  },
+  "footer": {
+    "info": "Todos los derechos reservados ©; 2024 Jesús Pérez"
   }
 }

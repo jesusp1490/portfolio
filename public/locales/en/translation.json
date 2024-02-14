@@ -13,5 +13,78 @@
     "title": "About me",
     "description": "I'm Jesús Pérez, a passionate software developer who loves solving complex problems with creative solutions. I started my journey in programming some years ago, and it has been a path filled with constant learning and improvement. I specialize in frontend development, where I focus on creating user-friendly interfaces, and in backend development, where I work on the essential parts that keep applications and websites running smoothly.",
     "skillsTitle": "Skills"
+  },
+  "services": {
+    "title": "Services",
+    "items": [
+      {
+        "title": "Git Version Control",
+        "description": "Enhance workflow efficiency with advanced and collaborative version control using Git.",
+        "icon": "faGithub"
+      },
+      {
+        "title": "App Design",
+        "description": "Intuitive, user-centered app designs with sleek interfaces and optimized user experiences.",
+        "icon": "faMobileButton"
+      },
+      {
+        "title": "Web Development",
+        "description": "Modern web development to create dynamic, responsive, and performance-oriented sites.",
+        "icon": "faCode"
+      },
+      {
+        "title": "Backend Development",
+        "description": "Robust and scalable back-end solutions powering the logic and data management of your applications.",
+        "icon": "faDatabase"
+      },
+      {
+        "title": "Photography",
+        "description": "Professional photography services that capture your brand's essence and enhance visual storytelling.",
+        "icon": "faCamera"
+      },
+      {
+        "title": "Freelancing",
+        "description": "Flexible and adaptable development and design services to take your projects to the next level.",
+        "icon": "faLaptop"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "Lucky": {
+      "title": "Lucky",
+      "description": "\"Lucky\" is an app for adopting animals. In this app, both users who wish to adopt a pet and animal shelters can register to showcase the animals available for adoption. This way, users can choose the pet that suits them best. The app has been developed using React, Node.js, Express.js, and MongoDB."
+    },
+    "GameStore": {
+      "title": "GameStore",
+      "description": "\"GameStore\" is a small video game shop where users can enter, register, and \"purchase\" games. They can explore top-rated games and filter them by price. It's built using JavaScript, Node.js, Express.js, and MongoDB."
+    },
+    "BMW - Landing Page": {
+      "title": "BMW - Landing Page",
+      "description": "\"BMW - Landing Page\" is an academic project where I've created a replica of BMW's landing page using HTML and SASS."
+    },
+    "Slack - Landing Page": {
+      "title": "Slack - Landing Page",
+      "description": "\"Slack - Landing Page\" is an academic project where I've created a replica of Slack's landing page using HTML and CSS."
+    }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "Do you have any projects in mind, or do you need any maintenance or photography services? Don't hesitate to contact me!",
+    "downloadResume": "Download Resume",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Submit"
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About Me",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "footer": {
+    "info": "All rights reserved ©; 2024 Jesús Pérez"
   }
 }

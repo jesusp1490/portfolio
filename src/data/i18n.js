@@ -4,7 +4,7 @@ import HttpBackend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 i18n
-    // Carga la traducción usando http -> /public/locales/<language>/<namespace>.json
+    // Carga la traducción usando http -> /locales/<language>/<namespace>.json
     .use(HttpBackend)
     // Detecta el idioma del usuario
     .use(LanguageDetector)
@@ -20,6 +20,9 @@ i18n
         interpolation: {
             escapeValue: false,
         },
+        backend: {
+            loadPath: '/locales/{{lng}}/{{ns}}.json' // Ruta relativa para cargar los archivos de traducción
+        }
     });
 
 export default i18n;

@@ -1,25 +1,28 @@
+import { useTranslation } from 'react-i18next';
 import Navbar from "../../components/Navbar/Navbar";
 import { TextField, Button, Box, Grid, Typography } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import cvFile from '../../assets/Jesus Perez_CV_esp.pdf';
 import '../ContactPage/_Contact.scss';
-import cvFile from '../../assets/Jesus Perez_CV_esp.pdf'; 
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="contact-page-container">
       <Navbar />
-      <h2 className="contact-title">Contact Me</h2>
+      <h2 className="contact-title">{t('contact.title')}</h2>
       <Grid container spacing={2} justifyContent="center" alignItems="center" style={{ marginTop: '100px', marginLeft: '1000px' }}>
         <Grid item xs={12} md={6}>
           <Typography variant="h6" gutterBottom fontFamily='Montserrat' >
-            Do you have any projects in mind, or do you need any maintenance or photography services? Don`t hesitate to contact me!
+            {t('contact.description')}
           </Typography>
 
           <div className="contact-rrss">
             <a href="https://github.com/jesusp1490" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} className="contact-rrss-icon" />
-            </a>       
+            </a>
             <a href="https://www.linkedin.com/in/jesusperez14/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedinIn} className="contact-rrss-icon" />
             </a>
@@ -29,7 +32,7 @@ const Contact = () => {
           </div>
 
           <Button variant="contained" href={cvFile} download="Jesus Perez_CV_esp.pdf" >
-            Download Resume
+            {t('contact.downloadResume')}
           </Button>
 
         </Grid>
@@ -55,23 +58,24 @@ const Contact = () => {
           >
             <TextField
               id="name-field"
-              label="Name"
+              label={t('contact.name')}
               variant="filled"
               color="accent"
-              style={{ width: '100%', fontSize: '2rem', 
-                '@media (max-width: 768px)': {
+              style={{
+                width: '100%', fontSize: '2rem',
+                '@media (maxWidth: 768px)': {
                   width: '100%',
                 },
               }}
             />
             <TextField
               id="email-field"
-              label="Email"
+              label={t('contact.email')}
               variant="filled"
               color="accent"
               style={{
                 width: '100%', fontSize: '2rem',
-                '@media (max-width: 768px)': {
+                '@media (maxWidth: 768px)': {
                   width: '100%',
                 },
               }}
@@ -79,7 +83,7 @@ const Contact = () => {
             />
             <TextField
               id="message-field"
-              label="Message"
+              label={t('contact.message')}
               variant="filled"
               required
               multiline
@@ -87,14 +91,14 @@ const Contact = () => {
               color="accent"
               style={{
                 width: '100%', fontSize: '2rem',
-                '@media (max-width: 768px)': {
+                '@media (maxWidth: 768px)': {
                   width: '100%',
                   marginRight: '100px',
                 },
               }}
             />
             <Button variant="contained" sx={{ mt: 2, width: '40%', fontSize: '1rem' }} color="accent">
-              Submit
+              {t('contact.submit')}
             </Button>
           </Box>
         </Grid>

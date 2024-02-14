@@ -1,0 +1,21 @@
+@import '../../styles/Utils/variables';
+
+.footer-container {
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 15%;
+    box-sizing: border-box;
+    z-index: 1000; 
+
+    @media screen and (max-width: 768px) {
+            width: 80%;
+        }
+}
+
+.footer-content {
+    max-width: 1200px; 
+    margin: 0 auto;
+    text-align: center;
+}

@@ -60,11 +60,11 @@
       "description": "\"GameStore\" is a small video game shop where users can enter, register, and \"purchase\" games. They can explore top-rated games and filter them by price. It's built using JavaScript, Node.js, Express.js, and MongoDB."
     },
     "BMW - Landing Page": {
-      "title": "BMW - Landing Page",
+      "title": "BMW",
       "description": "\"BMW - Landing Page\" is an academic project where I've created a replica of BMW's landing page using HTML and SASS."
     },
     "Slack - Landing Page": {
-      "title": "Slack - Landing Page",
+      "title": "Slack",
       "description": "\"Slack - Landing Page\" is an academic project where I've created a replica of Slack's landing page using HTML and CSS."
     }
   },

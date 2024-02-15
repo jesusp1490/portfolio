@@ -59,13 +59,13 @@
       "title": "GameStore",
       "description": "\"GameStore\" es una pequeña tienda de videojuegos donde los usuarios pueden ingresar, registrarse y \"comprar\" juegos. Pueden explorar juegos mejor calificados y filtrarlos por precio. Está construido con JavaScript, Node.js, Express.js y MongoDB."
     },
-    "BMW - Página de Aterrizaje": {
-      "title": "BMW - Página de Aterrizaje",
-      "description": "\"BMW - Página de Aterrizaje\" es un proyecto académico donde he creado una réplica de la página de aterrizaje de BMW utilizando HTML y SASS."
+    "BMW - Landing Page": {
+      "title": "BMW",
+      "description": "\"BMW - Landing Page\" es un proyecto académico donde he creado una réplica de la página de aterrizaje de BMW utilizando HTML y SASS."
     },
-    "Slack - Página de Aterrizaje": {
-      "title": "Slack - Página de Aterrizaje",
-      "description": "\"Slack - Página de Aterrizaje\" es un proyecto académico donde he creado una réplica de la página de aterrizaje de Slack utilizando HTML y CSS."
+    "Slack - Landing Page": {
+      "title": "Slack",
+      "description": "\"Slack - Landing Page\" es un proyecto académico donde he creado una réplica de la página de aterrizaje de Slack utilizando HTML y CSS."
     }
   },
   "contact": {

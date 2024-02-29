@@ -1,3 +1,4 @@
+// _Home.scss
 @import '../../styles/Utils/variables';
 
 body {
@@ -109,6 +110,40 @@ body {
                 #typed {
                     font-size: 4rem;
                     width: 80%;
+                }
+            }
+        }
+    }
+}
+
+// Media query for screens between 768px and 1200px
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .home-container {
+        .home-content {
+            .home-details {
+                .home-name {
+                    font-size: 4rem;
+                }
+
+                #typed {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
+
+// Media query for screens larger than 1200px
+@media screen and (min-width: 1200px) {
+    .home-container {
+        .home-content {
+            .home-details {
+                .home-name {
+                    font-size: 6rem;
+                }
+
+                #typed {
+                    font-size: 4.5rem;
                 }
             }
         }

@@ -78,6 +78,13 @@
                     background-color: $accent-color;
                 }
             }
+
+            @media screen and (min-width: 1200px) {
+                font-size: 1.2rem;
+                padding-left: 40px;
+                margin-left: 50px;
+                margin-bottom: 40px;
+            }
         }
 
         .language-button-container {
@@ -153,5 +160,11 @@
         .navbar-links {
             display: flex;
         }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar-container {
+        width: 320px;
     }
 }

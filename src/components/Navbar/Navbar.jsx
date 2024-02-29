@@ -45,8 +45,18 @@ const Navbar = () => {
                         <FontAwesomeIcon icon={faEnvelope} className="navbar-icon" /> {t('navbar.contact')}
                     </Link>
                     <div className="language-button-container">
-                        <button className="language-button" onClick={() => changeLanguage('en')}>EN</button>
-                        <button className="language-button" onClick={() => changeLanguage('es')}>ES</button>
+                        <button
+                            className={`language-button ${i18n.language === 'en' ? 'active' : ''}`}
+                            onClick={() => changeLanguage('en')}
+                        >
+                            EN
+                        </button>
+                        <button
+                            className={`language-button ${i18n.language === 'es' ? 'active' : ''}`}
+                            onClick={() => changeLanguage('es')}
+                        >
+                            ES
+                        </button>
                     </div>
                 </div>
             </div>

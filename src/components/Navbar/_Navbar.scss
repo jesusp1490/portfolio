@@ -18,12 +18,20 @@
     &:after {
         content: '';
         position: absolute;
-        left: 320px;
+        left: 360px;
         top: 0;
         bottom: 0;
         width: 2px;
         background-color: $accent-color;
         opacity: 0.2;
+
+        @media screen and (max-width: 768px) {
+            left: 300px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            left: 320px;
+        }
     }
 
     .navbar-logo {
@@ -108,15 +116,28 @@
                 &:hover {
                     color: $accent-color;
                 }
+
+                &.active {
+                    color: $accent-color;
+                }
             }
 
             .language-button::after {
                 content: "|"; 
                 position: absolute;
-                right: 17px; 
+                right: 28px; 
                 top: 40%;
                 transform: translateY(-50%);
                 color: $accent-color;
+
+
+                @media screen and (min-width: 768px) and (max-width: 1200px){
+                    right: 17px;
+                }
+
+                @media screen and (min-width: 280px) and (max-width: 768px) {
+                    right: 17px;
+                }
             }
         }
     }
@@ -156,9 +177,9 @@
 
     .menu-open {
         transform: translateX(0);
-
         .navbar-links {
             display: flex;
+            margin-bottom: 100px;
         }
 
         .resume-button {

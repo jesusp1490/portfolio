@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faUser, faCog, faBriefcase, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import './_Navbar.scss';
-import Footer from '../Footer/Footer';
 
 const Navbar = () => {
     const location = useLocation();
@@ -49,7 +48,6 @@ const Navbar = () => {
                         <button className="language-button" onClick={() => changeLanguage('en')}>EN</button>
                         <button className="language-button" onClick={() => changeLanguage('es')}>ES</button>
                     </div>
-                    <Footer />
                 </div>
             </div>
         </>

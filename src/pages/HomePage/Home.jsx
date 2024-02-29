@@ -7,8 +7,9 @@ import './_Home.scss';
 import { Button } from "@mui/material";
 import cvFile from '../../assets/Jesus Perez_CV_esp.pdf';
 import { useTranslation } from 'react-i18next';
+import PropTypes from 'prop-types';
 
-const Home = () => {
+const Home = ({ isMenuOpen }) => {
     const { t } = useTranslation();
 
     useEffect(() => {
@@ -51,13 +52,24 @@ const Home = () => {
                         </a>
                     </div>
 
-                    <Button variant="contained" href={cvFile} download="Jesus Perez_CV_esp.pdf">
-                        {t("home.downloadResume")}
-                    </Button>
+                    {!isMenuOpen && (
+                        <Button
+                            variant="contained"
+                            href={cvFile}
+                            download="Jesus Perez_CV_esp.pdf"
+                            className="resume-button"
+                        >
+                            {t("home.downloadResume")}
+                        </Button>
+                    )}
                 </div>
             </div>
         </div>
     )
 }
+
+Home.propTypes = {
+    isMenuOpen: PropTypes.bool.isRequired,
+};
 
 export default Home;

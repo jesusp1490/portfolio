@@ -111,9 +111,9 @@
             }
 
             .language-button::after {
-                content: "|"; // Contenido del pseudo-elemento
+                content: "|"; 
                 position: absolute;
-                right: 17px; // Ajuste de posición para que la barra esté alineada
+                right: 17px; 
                 top: 40%;
                 transform: translateY(-50%);
                 color: $accent-color;
@@ -133,7 +133,7 @@
         position: fixed;
         top: 10px;
         left: 10px;
-        z-index: 1201;
+        z-index: 10000;
         width: 30px;
         height: 30px;
         cursor: pointer;
@@ -160,11 +160,22 @@
         .navbar-links {
             display: flex;
         }
+
+        .resume-button {
+            visibility: hidden;
+        }
     }
 }
 
 @media screen and (min-width: 1200px) {
     .navbar-container {
         width: 320px;
+    }
+    
+}
+
+@media screen and (min-width: 280px) and (max-width: 768px) {
+    .resume-button {
+        visibility: hidden;
     }
 }

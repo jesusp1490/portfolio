@@ -1,7 +1,7 @@
 import Navbar from "../../components/Navbar/Navbar";
 import './_AboutMe.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faJs, faReact, faAngular, faNodeJs, faHtml5, faCss3Alt, faSass, faBootstrap, faGitAlt, faNpm, faGithub, faMdb } from '@fortawesome/free-brands-svg-icons';
+import { faJs, faReact, faAngular, faNodeJs, faHtml5, faCss3Alt, faSass, faBootstrap, faGitAlt, faGithub, faMdb } from '@fortawesome/free-brands-svg-icons';
 import { useTranslation } from 'react-i18next';
 
 const AboutMe = () => {
@@ -48,7 +48,6 @@ const AboutMe = () => {
             </svg>
             <FontAwesomeIcon icon={faGitAlt} className="skill-icon" size="4x" />
             <FontAwesomeIcon icon={faGithub} className="skill-icon" size="4x" />
-            <FontAwesomeIcon icon={faNpm} className="skill-icon" size="4x" />
             <FontAwesomeIcon icon={faMdb} className="skill-icon" size="4x" />
             <svg
               className="skill-icon"

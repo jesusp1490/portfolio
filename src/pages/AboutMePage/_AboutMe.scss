@@ -9,7 +9,7 @@
 
     .about-me-image-bg {
         position: absolute;
-        left: 0;
+        left: 40px;
         height: 100vh;
 
         img {
@@ -30,6 +30,7 @@
         width: 35%;
         height: 75%;
         z-index: 10;
+        overflow: auto; 
 
         .about-me-text {
             text-align: left;
@@ -76,15 +77,13 @@
     }
 }
 
-// Media query para pantallas menores a 768px
+// Media query for screens smaller than 768px
 @media screen and (max-width: 768px) {
     .about-me-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 30px;
-        margin-left: 30px;
-        // position: relative;
+        margin: 0;
         height: 100vh;
 
         .about-me-image-bg {
@@ -92,102 +91,58 @@
         }
 
         .about-me-card {
-            background: rgba(42, 44, 47, 0.35);
-            border-radius: 16px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(7.7px);
-            width: 500px;
-            height: 100%;
-            z-index: -10;
+            width: 90%; 
+            height: auto; 
+            margin: 20px; 
+            z-index: 10;
+        }
+    }
+}
 
-            .about-me-text {
-                text-align: left;
-                padding: 10px;
+// Media query for screens between 768px and 1200px
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .about-me-container {
+        margin-left: 0;
+        justify-content: center;
 
-                h2 {
-                    color: $accent-color;
-                    font-size: 2rem;
-                }
+        .about-me-image-bg {
+            display: none;
+        }
 
-                p {
-                    color: $font-color;
-                    font-size: 1rem;
-                }
+        .about-me-card {
+            width: 100%; // Adjust as needed
+            height: auto;
+            margin-left: 400px;
+        }
+
+        .about-me-text {
+            h2 {
+                font-size: 2rem;
             }
 
-            .about-me-skills {
-                padding: 10px;
-
-                h2 {
-                    color: $accent-color;
-                    font-size: 2rem;
-                    margin-bottom: 20px;
-                }
-
-                .skills-logos {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 10px;
-                    gap: 25px;
-
-                    .skill-icon {
-                        color: #EEEEEE;
-                        transition: color 0.3s;
-
-                        &:hover {
-                            color: #EA9215;
-                        }
-                    }
-                }
+            p {
+                font-size: 1.2rem;
             }
         }
     }
 }
 
-// Media query para pantallas mayores a 1920px
+// Media query for screens larger than 1920px
 @media screen and (min-width: 1920px) {
     .about-me-container {
-        display: flex;
-        justify-content: flex-end;
-        margin-left: 315px;
-        position: relative;
-        height: 100vh;
-
-        .about-me-image-bg {
-            position: absolute;
-            left: 0;
-            height: 100vh;
-
-            img {
-                width: 100%;
-                height: 100vh;
-                object-fit: cover;
-                transform: scaleX(-1);
-            }
-        }
-
         .about-me-card {
-            background: rgba(42, 44, 47, 0.35);
-            border-radius: 16px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(7.7px);
-            padding: 30px;
-            margin: 100px;
             width: 40%;
             height: 75%;
-            z-index: 10;
 
             .about-me-text {
                 text-align: left;
                 padding: 15px;
-
+            
                 h2 {
                     color: $accent-color;
-                    font-size: 2rem;
+                    font-size: 3rem;
                 }
-
+            
                 p {
                     color: $font-color;
                     font-size: 1.5rem;
@@ -199,7 +154,7 @@
 
                 h2 {
                     color: $accent-color;
-                    font-size: 2rem;
+                    font-size: 3rem;
                     margin-bottom: 20px;
                 }
 
@@ -209,12 +164,13 @@
                     justify-content: center;
                     align-items: center;
                     margin: 10px;
-                    gap: 30px;
+                    gap: 35px;
 
                     .skill-icon {
                         color: #EEEEEE;
                         transition: color 0.3s;
-                        font-size: 120px;
+                        font-size: 90px;
+                        margin-top: 20px;
 
                         &:hover {
                             color: #EA9215;

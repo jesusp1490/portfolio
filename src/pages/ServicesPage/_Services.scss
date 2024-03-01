@@ -3,18 +3,16 @@
 .services-section {
     margin-left: 320px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
     gap: 20px;
 
     @media screen and (max-width: 768px) {
         margin-left: 0;
-        grid-template-columns: 1fr;
         padding: 0 20px;
     }
 
-    @media screen and (min-width: 1920px) {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: repeat(auto-fill, minmax(300px, max(300px, calc((100% - 80px) / 3)))); 
     }
 }
 

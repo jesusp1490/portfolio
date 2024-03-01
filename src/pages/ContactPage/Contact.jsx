@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import Navbar from "../../components/Navbar/Navbar";
-import { TextField, Button, Box, Grid, Typography } from '@mui/material';
+import { Button, Grid, Typography } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import cvFile from '../../assets/Jesus Perez_CV_esp.pdf';
@@ -13,10 +13,10 @@ const Contact = () => {
     <div className="contact-page-container">
       <Navbar />
       <h2 className="contact-title">{t('contact.title')}</h2>
-      <Grid container spacing={2} justifyContent="center" alignItems="center" style={{ marginTop: '100px', marginLeft: '1000px' }}>
+      <Grid container spacing={2} justifyContent="center" alignItems="center" style={{ marginTop: '100px' }}>
         <Grid item xs={12} md={6}>
           <Typography variant="h6" gutterBottom fontFamily='Montserrat' >
-            {t('contact.description')}
+            <div className='contact-page-description' dangerouslySetInnerHTML={{ __html: t('contact.description') }} />
           </Typography>
 
           <div className="contact-rrss">
@@ -34,73 +34,6 @@ const Contact = () => {
           <Button variant="contained" href={cvFile} download="Jesus Perez_CV_esp.pdf" >
             {t('contact.downloadResume')}
           </Button>
-
-        </Grid>
-        <Grid item xs={12} md={6} >
-          <Box
-            className="contact-form-container"
-            component="form"
-            sx={{
-              '& .MuiTextField-root': { m: 1, width: '25ch' },
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-              padding: '20px',
-              borderRadius: '10px',
-              maxWidth: '500px',
-              width: '100%',
-              margin: 'auto',
-              height: '50%',
-            }}
-            noValidate
-            autoComplete="off"
-          >
-            <TextField
-              id="name-field"
-              label={t('contact.name')}
-              variant="filled"
-              color="accent"
-              style={{
-                width: '100%', fontSize: '2rem',
-                '@media (maxWidth: 768px)': {
-                  width: '100%',
-                },
-              }}
-            />
-            <TextField
-              id="email-field"
-              label={t('contact.email')}
-              variant="filled"
-              color="accent"
-              style={{
-                width: '100%', fontSize: '2rem',
-                '@media (maxWidth: 768px)': {
-                  width: '100%',
-                },
-              }}
-
-            />
-            <TextField
-              id="message-field"
-              label={t('contact.message')}
-              variant="filled"
-              required
-              multiline
-              rows={8}
-              color="accent"
-              style={{
-                width: '100%', fontSize: '2rem',
-                '@media (maxWidth: 768px)': {
-                  width: '100%',
-                  marginRight: '100px',
-                },
-              }}
-            />
-            <Button variant="contained" sx={{ mt: 2, width: '40%', fontSize: '1rem' }} color="accent">
-              {t('contact.submit')}
-            </Button>
-          </Box>
         </Grid>
       </Grid>
     </div>

@@ -1,7 +1,11 @@
 {
   "home": {
     "title": "JESUS PEREZ",
-    "roles": ["Desarrollador Full Stack", "Desarrollador de Videojuegos", "Fotógrafo"],
+    "roles": [
+      "Desarrollador Full Stack",
+      "Desarrollador de Videojuegos",
+      "Fotógrafo"
+    ],
     "downloadResume": "Descargar CV",
     "social": {
       "github": "Visita mi perfil de GitHub",
@@ -70,7 +74,7 @@
   },
   "contact": {
     "title": "Contáctame",
-    "description": "¿Tienes algún proyecto en mente o necesitas algún servicio de mantenimiento o fotografía? ¡No dudes en contactarme!",
+    "description": "<h1>¡Hola!</h1><p>¡Me alegro verte por aquí! Siempre estoy listo para una buena charla. Si tienes alguna pregunta, idea o simplemente quieres saludar, ¡no dudes en hacerlo!.</p><p>Puedes escribirme directamente a mi correo electrónico <strong>jesusperez_14@hotmail.com</strong> y estaré encantado de responderte lo antes posible.</p><p>También puedes encontrarme en las redes sociales.</p><p>¡Espero saber de ti pronto!</p>",
     "downloadResume": "Descargar CV",
     "name": "Nombre",
     "email": "Correo electrónico",
@@ -83,8 +87,5 @@
     "services": "Servicios",
     "portfolio": "Portafolio",
     "contact": "Contacto"
-  },
-  "footer": {
-    "info": "Todos los derechos reservados ©; 2024 Jesús Pérez"
   }
 }

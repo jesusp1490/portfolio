@@ -70,7 +70,8 @@
   },
   "contact": {
     "title": "Contact Me",
-    "description": "Do you have any projects in mind, or do you need any maintenance or photography services? Don't hesitate to contact me!",
+    "description": 
+"<h1>Hello!</h1><p>It's great to see you here! I'm always ready for a good chat. If you have any questions, ideas, or just want to say hello, feel free to do so!</p><p>You can write to me directly at my email <strong>jesusperez_14@hotmail.com</strong> and I'll be happy to get back to you as soon as possible.</p><p>You can also find me on social media.</p><p>Looking forward to hearing from you soon!</p>",
     "downloadResume": "Download Resume",
     "name": "Name",
     "email": "Email",
@@ -83,8 +84,5 @@
     "services": "Services",
     "portfolio": "Portfolio",
     "contact": "Contact"
-  },
-  "footer": {
-    "info": "All rights reserved ©; 2024 Jesús Pérez"
   }
 }

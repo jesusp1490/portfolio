@@ -1,62 +1,54 @@
 // _Contact.scss
 @import '../../styles/Utils/variables';
 
-.contact-title {
-    grid-column: 1 / -1;
-    text-align: left;
-    color: $accent-color;
-    font-size: 2rem;
-    margin-right: 15rem;
-    
-    @media screen and (max-width: 768px) {
-        margin-left: 900px;
-        width: 100%;
-    }
-}
-
 .contact-page-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    margin-right: 700px;
     font-family: 'Montserrat', sans-serif;
+    margin-left: 150px;
+    width: calc(100% - 100px);
 
-    @media screen and (max-width: 768px) {
-        margin-left: -320px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 70%;
-    }
-}
-
-.contact-form-container {
-    width: 100% !important;
-    max-width: 320px;
-    margin: auto;
-
-    @media screen and (max-width: 768px) {
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 90% !important;
-    }
-}
-
-.contact-rrss {
-    margin-top: 30px;
-    margin-bottom: 30px;
-
-    .contact-rrss-icon {
-        font-size: 2rem;
-        margin: 0 10px;
-        color: $font-color;
-        transition: color 0.3s ease;
-    }
-
-    .contact-rrss-icon:hover {
+    .contact-title {
+        text-align: left;
         color: $accent-color;
+        font-size: 2rem;
+        margin-left: 50px;
+    }
+
+    .contact-page-description {
+        width: 100%;
+        margin-bottom: 2rem;
+        margin-top: -50px;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 1rem;
+        margin-left: 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 320px; 
+        width: calc(100% - 320px);
+    }
+
+    .contact-rrss {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 2rem;
+
+        .contact-rrss-icon {
+            font-size: 3rem;
+            margin: 0 10px;
+            color: $font-color;
+            transition: color 0.3s ease;
+        }
+
+        .contact-rrss-icon:hover {
+            color: $accent-color;
+        }
     }
 }

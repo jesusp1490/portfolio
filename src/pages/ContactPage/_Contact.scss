@@ -26,13 +26,26 @@
     @media screen and (max-width: 768px) {
         padding: 1rem;
         margin-left: 0;
-        width: 100%;
+        width: 85%;
         align-items: center;
+
+        .contact-title {
+            margin-right: 200px;
+        }
     }
 
     @media screen and (min-width: 1200px) {
         margin-left: 320px; 
         width: calc(100% - 320px);
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1200px) {
+        margin-left: 200px; 
+        width: calc(100% - 100px); 
+
+        .contact-title {
+            margin-left: 120px;
+        }
     }
 
     .contact-rrss {

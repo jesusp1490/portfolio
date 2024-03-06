@@ -18,15 +18,19 @@ const Navbar = () => {
     };
 
     return (
-        <>
+        <nav className='navbar'>
+            {/* <div className="navbar-logo">
+                <img src="https://res.cloudinary.com/dizd9f3ky/image/upload/v1709294449/NukeDev_Logo_uasedo.png" alt="Logo" className='nb-logo' />
+            </div> */}
+
             <div className="navbar-icon-menu" onClick={toggleMenu}>
                 <div className="menu-icon-bar"></div>
                 <div className="menu-icon-bar"></div>
                 <div className="menu-icon-bar"></div>
             </div>
-            <div className={`navbar-container ${isMenuOpen ? 'menu-open' : ''}`}>
             
-                {/* <img src='https://res.cloudinary.com/dizd9f3ky/image/upload/v1707915006/LogoB_ctfse8.png' className='navbar-logo'/> */}
+            <div className={`navbar-container ${isMenuOpen ? 'menu-open' : ''}`}>
+        
             
                 <div className="navbar-links">
                     <Link to="/" className={location.pathname === '/' ? 'selected' : ''} onClick={closeMenu}>
@@ -60,7 +64,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </nav>
     );
 };
 

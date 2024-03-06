@@ -1,47 +1,51 @@
-// _Navbar.scss
 @import '../../styles/Utils/variables';
 
-.navbar-container {
-    position: fixed;
-    z-index: 20;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 280px;
-    background-color: $primary-color;
-    color: $font-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
+.navbar {
 
-    &:after {
-        content: '';
-        position: absolute;
-        left: 360px;
+    .navbar-container {
+        position: fixed;
+        z-index: 20;
         top: 0;
-        bottom: 0;
-        width: 2px;
-        background-color: $accent-color;
-        opacity: 0.2;
+        left: 0;
+        height: 100vh;
+        width: 280px;
+        background-color: $primary-color;
+        color: $font-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
 
-        @media screen and (max-width: 768px) {
-            left: 300px;
-        }
+        &:after {
+            content: '';
+            position: absolute;
+            left: 360px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: $accent-color;
+            opacity: 0.2;
 
-        @media screen and (max-width: 1200px) {
-            left: 320px;
+            @media screen and (max-width: 768px) {
+                left: 300px;
+            }
+
+            @media screen and (max-width: 1200px) {
+                left: 320px;
+            }
         }
     }
 
     .navbar-logo {
-        width: 150px;
-        margin-top: -300px;
-        margin-bottom: 100px;
-        margin-left: 60px;
-        opacity: 0.7;
-        rotate: -25deg;
+        position: relative;
+        z-index: 30;
+
+        img{
+            height: 80px;
+            width: auto;
+            margin-left: 120px;   
+        }
     }
 
     .navbar-links {
@@ -124,15 +128,15 @@
             }
 
             .language-button::after {
-                content: "|"; 
+                content: "|";
                 position: absolute;
-                right: 28px; 
+                right: 28px;
                 top: 40%;
                 transform: translateY(-50%);
                 color: $accent-color;
 
 
-                @media screen and (min-width: 768px) and (max-width: 1200px){
+                @media screen and (min-width: 768px) and (max-width: 1200px) {
                     right: 17px;
                 }
 
@@ -142,62 +146,64 @@
             }
         }
     }
-}
 
-@media screen and (max-width: 768px) {
-    .navbar-container {
-        transform: translateX(-100%);
-        transition: transform 0.3s ease-in-out;
-    }
 
-    .navbar-icon-menu {
-        display: block;
-        position: fixed;
-        top: 10px;
-        left: 10px;
-        z-index: 10000;
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-    }
-
-    .menu-icon-bar {
-        width: 20px;
-        height: 2px;
-        background-color: $font-color;
-        margin-bottom: 5px;
-    }
-
-    .navbar-links {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        background-color: $primary-color;
-        padding-top: 60px;
-    }
-
-    .menu-open {
-        transform: translateX(0);
-        .navbar-links {
-            display: flex;
-            margin-bottom: 100px;
+    @media screen and (max-width: 768px) {
+        .navbar-container {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
         }
 
+        .navbar-icon-menu {
+            display: block;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 10000;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .menu-icon-bar {
+            width: 20px;
+            height: 2px;
+            background-color: $font-color;
+            margin-bottom: 5px;
+        }
+
+        .navbar-links {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            background-color: $primary-color;
+            padding-top: 60px;
+        }
+
+        .menu-open {
+            transform: translateX(0);
+
+            .navbar-links {
+                display: flex;
+                margin-bottom: 100px;
+            }
+
+            .resume-button {
+                visibility: hidden;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .navbar-container {
+            width: 320px;
+        }
+
+    }
+
+    @media screen and (min-width: 280px) and (max-width: 768px) {
         .resume-button {
             visibility: hidden;
         }
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .navbar-container {
-        width: 320px;
-    }
-    
-}
-
-@media screen and (min-width: 280px) and (max-width: 768px) {
-    .resume-button {
-        visibility: hidden;
     }
 }

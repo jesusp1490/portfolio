@@ -59,17 +59,21 @@
       "title": "Lucky",
       "description": "\"Lucky\" es una aplicación para adoptar animales. En esta aplicación, tanto los usuarios que desean adoptar una mascota como los refugios de animales pueden registrarse para mostrar los animales disponibles para su adopción. De esta manera, los usuarios pueden elegir la mascota que mejor se adapte a ellos. La aplicación ha sido desarrollada utilizando React, Node.js, Express.js y MongoDB."
     },
+    "Beats - Landing Page": {
+      "title": "Beats",
+      "description": "\"Beats - Landing Page\" es un proyecto personal donde he creado una réplica de la página principal de Beats utilizando HTML, CSS y JavaScript."
+    },
     "GameStore": {
       "title": "GameStore",
       "description": "\"GameStore\" es una pequeña tienda de videojuegos donde los usuarios pueden ingresar, registrarse y \"comprar\" juegos. Pueden explorar juegos mejor calificados y filtrarlos por precio. Está construido con JavaScript, Node.js, Express.js y MongoDB."
     },
     "BMW - Landing Page": {
       "title": "BMW",
-      "description": "\"BMW - Landing Page\" es un proyecto académico donde he creado una réplica de la página de aterrizaje de BMW utilizando HTML y SASS."
+      "description": "\"BMW - Landing Page\" es un proyecto académico donde he creado una réplica de la página principal de BMW utilizando HTML y SASS."
     },
     "Slack - Landing Page": {
       "title": "Slack",
-      "description": "\"Slack - Landing Page\" es un proyecto académico donde he creado una réplica de la página de aterrizaje de Slack utilizando HTML y CSS."
+      "description": "\"Slack - Landing Page\" es un proyecto académico donde he creado una réplica de la página principal de Slack utilizando HTML y CSS."
     }
   },
   "contact": {

@@ -10,7 +10,7 @@ const projectsData = [
     },
     {
         title: 'Beats - Landing Page',
-        description: 'Beats - Landing Page is small personal project where I`ve created a replica of BEATS`s landing page using HTML and CSS and JavaScript.',
+        description: 'Beats - Landing Page is a small personal project where I`ve created a replica of BEATS`s landing page using HTML, CSS and JavaScript.',
         imageUrl: 'https://res.cloudinary.com/dizd9f3ky/image/upload/v1721998998/Beats-replik_g7ggbt.jpg',
         repoUrl: 'https://github.com/jesusp1490/Beats-LandingPage-Replica',
         techIcons: [faHtml5, faCss3Alt, faJsSquare]

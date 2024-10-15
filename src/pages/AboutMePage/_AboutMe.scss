@@ -6,11 +6,13 @@
     margin-left: 315px;
     position: relative;
     min-height: 100vh;
+    overflow: hidden;
 
     .about-me-image-bg {
         position: absolute;
         left: 40px;
         height: 100vh;
+        overflow: hidden;
 
         img {
             width: 100%;
@@ -25,12 +27,12 @@
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(7.7px);
-        padding: 30px;
+        /* padding: 30px; */
         margin: 100px;
         width: 35%;
         height: 75%;
         z-index: 10;
-        overflow: auto; 
+        overflow: hidden;
 
         .about-me-text {
             text-align: left;
@@ -66,14 +68,26 @@
 
                 .skill-icon {
                     color: #EEEEEE;
-                    transition: color 0.3s;
+                    transition: color 0.3s, transform 0.3s;
 
                     &:hover {
                         color: #EA9215;
+                        transform: scale(1.1);
                     }
                 }
             }
         }
+    }
+
+    .skill-tooltip {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 0.8rem;
+        pointer-events: none;
+        z-index: 100;
     }
 }
 
@@ -91,9 +105,9 @@
         }
 
         .about-me-card {
-            width: 90%; 
-            height: auto; 
-            margin: 20px; 
+            width: 90%;
+            height: auto;
+            margin: 20px;
             z-index: 10;
         }
     }
@@ -111,7 +125,7 @@
         }
 
         .about-me-card {
-            width: 100%; 
+            width: 100%;
             height: auto;
             margin-left: 400px;
         }
@@ -132,6 +146,7 @@
 @media screen and (min-width: 1920px) {
     .about-me-container {
         min-height: 100vh;
+
         .about-me-card {
             width: 40%;
             height: 75%;
@@ -139,12 +154,12 @@
             .about-me-text {
                 text-align: left;
                 padding: 15px;
-            
+
                 h2 {
                     color: $accent-color;
                     font-size: 3rem;
                 }
-            
+
                 p {
                     color: $font-color;
                     font-size: 1.5rem;
@@ -170,12 +185,13 @@
 
                     .skill-icon {
                         color: #EEEEEE;
-                        transition: color 0.3s;
+                        transition: color 0.3s, transform 0.3s;
                         font-size: 90px;
                         margin-top: 20px;
 
                         &:hover {
                             color: #EA9215;
+                            transform: scale(1.1);
                         }
                     }
                 }

@@ -1,0 +1,108 @@
+@import '../../styles/Utils/variables';
+
+.project-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.project-modal-content {
+    background-color: $primary-color;
+    color: $font-color;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 700px;
+    width: 90%;
+    max-height: 85vh;
+    overflow-y: auto;
+    position: relative;
+
+    h2 {
+        color: $accent-color;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        color: $accent-color;
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .project-image {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+    }
+
+    .project-details {
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .project-tech {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+        .tech-icon {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    .project-links {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1.5rem;
+
+        .project-link {
+            padding: 0.5rem 1rem;
+            background-color: $secondary-color;
+            color: $font-color;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            &:hover {
+                background-color: darken($accent-color, 10%);
+            }
+        }
+    }
+}
+
+.close-button {
+    position: absolute;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: $font-color;
+}
+
+@media screen and (max-width: 768px) {
+    .project-modal-content {
+        padding: 1rem;
+        width: 95%;
+    }
+}

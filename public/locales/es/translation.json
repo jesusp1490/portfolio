@@ -55,6 +55,10 @@
   },
   "projects": {
     "title": "Proyectos",
+    "BeerHub": {
+      "title": "BeerHub",
+      "description": "\"BeerHub\" es una plataforma global diseñada para los entusiastas de la cerveza, donde pueden descubrir, calificar y marcar como favoritas cervezas de todo el mundo. Actualmente en acceso anticipado, la plataforma comienza con 10 marcas de España y Portugal, y se añaden nuevos países y regiones cada semana."
+    },
     "Lucky": {
       "title": "Lucky",
       "description": "\"Lucky\" es una aplicación para adoptar animales. En esta aplicación, tanto los usuarios que desean adoptar una mascota como los refugios de animales pueden registrarse para mostrar los animales disponibles para su adopción. De esta manera, los usuarios pueden elegir la mascota que mejor se adapte a ellos. La aplicación ha sido desarrollada utilizando React, Node.js, Express.js y MongoDB."

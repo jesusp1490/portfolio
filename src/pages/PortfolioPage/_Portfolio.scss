@@ -1,42 +1,91 @@
 @import '../../styles/Utils/variables';
 
 .portfolio-container {
-    margin-left: 150px;
+    display: flex;
+    min-height: 100vh;
+   
+}
 
-    @media screen and (max-width: 768px) {
-        margin-left: 0;
-    }
+.portfolio-content {
+    flex-grow: 1;
+    padding: 2rem;
+    margin-left: 350px; 
 }
 
 .portfolio-title {
-    text-align: left;
     color: $accent-color;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 14rem;
+    font-size: 2.5rem;
+    margin: 0;
+    margin-bottom: 2.5rem;
+    /* text-align: center; */
+}
 
-    @media screen and (max-width: 768px) {
-        margin-left: 0;
+.portfolio-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    .filter-buttons {
+        display: flex;
+        gap: 1rem;
+
+        button {
+            padding: 0.5rem 1rem;
+            background-color: $primary-color;
+            color: $font-color;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover,
+            &.active {
+                background-color: $accent-color;
+            }
+        }
     }
-    
+
+    .search-input {
+        padding: 0.5rem;
+        border: 1px solid $primary-color;
+        border-radius: 4px;
+        background-color: transparent;
+        color: $font-color;
+        width: 200px;
+
+        &::placeholder {
+            color: darken($font-color, 30%);
+        }
+    }
 }
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 60px;
-    padding: 0 20px;
-    margin-left: 200px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
 
-    @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    .portfolio-content {
         margin-left: 0;
+        padding: 1rem;
     }
 
-    @media screen and (min-width: 1200px) {
-        grid-template-columns: repeat(auto-fill, minmax(250px, max(250px, calc((100% - 240px) / 4)))); // Limit to 4 cards per row
+    .portfolio-controls {
+        flex-direction: column;
+        align-items: stretch;
+
+        .filter-buttons {
+            margin-bottom: 1rem;
+        }
+
+        .search-input {
+            width: 100%;
+        }
     }
 
-    @media screen and (min-width: 1920px) {
-        grid-template-columns: repeat(5, 1fr);
+    .portfolio-grid {
+        grid-template-columns: 1fr;
     }
 }

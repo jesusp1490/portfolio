@@ -16,36 +16,116 @@
   },
   "services": {
     "title": "Services",
+    "featuresTitle": "Key Features",
+    "benefitsTitle": "Benefits",
     "items": [
       {
         "title": "Git Version Control",
         "description": "Enhance workflow efficiency with advanced and collaborative version control using Git.",
-        "icon": "faGithub"
+        "icon": "faGithub",
+        "fullDescription": "Git version control is essential for modern software development. I offer expertise in implementing and managing Git workflows, ensuring smooth collaboration and efficient code management for your projects.",
+        "features": [
+          "Branch management and merging strategies",
+          "Code review processes",
+          "Conflict resolution",
+          "Git hooks and automation"
+        ],
+        "benefits": [
+          "Improved team collaboration",
+          "Better code quality through review processes",
+          "Easy tracking of project history and changes",
+          "Simplified deployment and rollback procedures"
+        ]
       },
       {
         "title": "App Design",
         "description": "Intuitive, user-centered app designs with sleek interfaces and optimized user experiences.",
-        "icon": "faMobileButton"
+        "icon": "faMobileButton",
+        "fullDescription": "I create app designs that not only look great but also provide an intuitive and engaging user experience. My approach focuses on understanding user needs and translating them into functional, aesthetically pleasing designs.",
+        "features": [
+          "User-centered design process",
+          "Wireframing and prototyping",
+          "UI/UX design",
+          "Responsive and adaptive layouts"
+        ],
+        "benefits": [
+          "Increased user engagement and retention",
+          "Improved app usability and accessibility",
+          "Consistent brand representation across platforms",
+          "Reduced development time through clear design specifications"
+        ]
       },
       {
         "title": "Web Development",
         "description": "Modern web development to create dynamic, responsive, and performance-oriented sites.",
-        "icon": "faCode"
+        "icon": "faCode",
+        "fullDescription": "I specialize in creating modern, responsive websites that not only look great but also perform exceptionally well. Using the latest web technologies and best practices, I ensure your web presence is both impactful and efficient.",
+        "features": [
+          "Responsive design implementation",
+          "Front-end frameworks (React, Vue, Angular)",
+          "Performance optimization",
+          "Progressive Web Apps (PWAs)"
+        ],
+        "benefits": [
+          "Fast-loading, SEO-friendly websites",
+          "Cross-browser and cross-device compatibility",
+          "Improved user engagement and conversion rates",
+          "Easy maintenance and scalability"
+        ]
       },
       {
         "title": "Backend Development",
         "description": "Robust and scalable back-end solutions powering the logic and data management of your applications.",
-        "icon": "faDatabase"
+        "icon": "faDatabase",
+        "fullDescription": "I develop robust and scalable backend solutions that form the foundation of your applications. From API design to database management, I ensure your backend can handle growth and maintain performance under load.",
+        "features": [
+          "RESTful and GraphQL API development",
+          "Database design and optimization",
+          "Server-side application logic",
+          "Cloud integration (AWS, Google Cloud, Azure)"
+        ],
+        "benefits": [
+          "Scalable architecture to support growth",
+          "Improved data security and integrity",
+          "Efficient data processing and retrieval",
+          "Easy integration with front-end and third-party services"
+        ]
       },
       {
         "title": "Photography",
         "description": "Professional photography services that capture your brand's essence and enhance visual storytelling.",
-        "icon": "faCamera"
+        "icon": "faCamera",
+        "fullDescription": "I offer professional photography services that go beyond just taking pictures. My goal is to capture the essence of your brand or project, creating visual narratives that engage and inspire your audience.",
+        "features": [
+          "Product photography",
+          "Event coverage",
+          "Lifestyle and branding shoots",
+          "Photo editing and retouching"
+        ],
+        "benefits": [
+          "High-quality visuals for marketing materials",
+          "Consistent brand imagery across platforms",
+          "Increased engagement on social media and websites",
+          "Professional documentation of events and milestones"
+        ]
       },
       {
         "title": "Freelancing",
         "description": "Flexible and adaptable development and design services to take your projects to the next level.",
-        "icon": "faLaptop"
+        "icon": "faLaptop",
+        "fullDescription": "As a freelancer, I offer a wide range of development and design services tailored to your specific needs. My flexible approach allows me to adapt to various project requirements and deliver high-quality results.",
+        "features": [
+          "Custom software development",
+          "UI/UX design",
+          "Project management",
+          "Technical consulting"
+        ],
+        "benefits": [
+          "Cost-effective solutions for businesses of all sizes",
+          "Access to diverse skill sets and expertise",
+          "Flexible scheduling and project scoping",
+          "Direct communication and quick turnaround times"
+        ]
       }
     ]
   },

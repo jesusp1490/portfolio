@@ -20,36 +20,116 @@
   },
   "services": {
     "title": "Servicios",
+    "featuresTitle": "Características Principales",
+    "benefitsTitle": "Beneficios",
     "items": [
       {
         "title": "Control de Versiones con Git",
         "description": "Mejora la eficiencia del flujo de trabajo con control de versiones avanzado y colaborativo utilizando Git.",
-        "icon": "faGithub"
+        "icon": "faGithub",
+        "fullDescription": "El control de versiones con Git es esencial para el desarrollo de software moderno. Ofrezco experiencia en la implementación y gestión de flujos de trabajo de Git, asegurando una colaboración fluida y una gestión eficiente del código para sus proyectos.",
+        "features": [
+          "Gestión de ramas y estrategias de fusión",
+          "Procesos de revisión de código",
+          "Resolución de conflictos",
+          "Hooks de Git y automatización"
+        ],
+        "benefits": [
+          "Mejora en la colaboración del equipo",
+          "Mayor calidad del código a través de procesos de revisión",
+          "Fácil seguimiento del historial y cambios del proyecto",
+          "Procedimientos simplificados de despliegue y reversión"
+        ]
       },
       {
         "title": "Diseño de Aplicaciones",
         "description": "Diseños de aplicaciones intuitivos y centrados en el usuario con interfaces elegantes y experiencias de usuario optimizadas.",
-        "icon": "faMobileButton"
+        "icon": "faMobileButton",
+        "fullDescription": "Creo diseños de aplicaciones que no solo se ven geniales, sino que también proporcionan una experiencia de usuario intuitiva y atractiva. Mi enfoque se centra en comprender las necesidades del usuario y traducirlas en diseños funcionales y estéticamente agradables.",
+        "features": [
+          "Proceso de diseño centrado en el usuario",
+          "Wireframing y prototipado",
+          "Diseño de UI/UX",
+          "Layouts responsivos y adaptativos"
+        ],
+        "benefits": [
+          "Mayor compromiso y retención de usuarios",
+          "Mejora en la usabilidad y accesibilidad de la aplicación",
+          "Representación consistente de la marca en todas las plataformas",
+          "Reducción del tiempo de desarrollo mediante especificaciones de diseño claras"
+        ]
       },
       {
         "title": "Desarrollo Web",
         "description": "Desarrollo web moderno para crear sitios dinámicos, receptivos y orientados al rendimiento.",
-        "icon": "faCode"
+        "icon": "faCode",
+        "fullDescription": "Me especializo en crear sitios web modernos y responsivos que no solo se ven geniales, sino que también tienen un rendimiento excepcional. Utilizando las últimas tecnologías web y las mejores prácticas, aseguro que su presencia en la web sea impactante y eficiente.",
+        "features": [
+          "Implementación de diseño responsivo",
+          "Frameworks front-end (React, Vue, Angular)",
+          "Optimización del rendimiento",
+          "Aplicaciones Web Progresivas (PWAs)"
+        ],
+        "benefits": [
+          "Sitios web de carga rápida y amigables con SEO",
+          "Compatibilidad entre navegadores y dispositivos",
+          "Mejora en el compromiso del usuario y las tasas de conversión",
+          "Fácil mantenimiento y escalabilidad"
+        ]
       },
       {
         "title": "Desarrollo Backend",
         "description": "Soluciones backend robustas y escalables que impulsan la lógica y la gestión de datos de sus aplicaciones.",
-        "icon": "faDatabase"
+        "icon": "faDatabase",
+        "fullDescription": "Desarrollo soluciones backend robustas y escalables que forman la base de sus aplicaciones. Desde el diseño de API hasta la gestión de bases de datos, aseguro que su backend pueda manejar el crecimiento y mantener el rendimiento bajo carga.",
+        "features": [
+          "Desarrollo de API RESTful y GraphQL",
+          "Diseño y optimización de bases de datos",
+          "Lógica de aplicación del lado del servidor",
+          "Integración en la nube (AWS, Google Cloud, Azure)"
+        ],
+        "benefits": [
+          "Arquitectura escalable para soportar el crecimiento",
+          "Mejora en la seguridad e integridad de los datos",
+          "Procesamiento y recuperación eficiente de datos",
+          "Fácil integración con front-end y servicios de terceros"
+        ]
       },
       {
         "title": "Fotografía",
         "description": "Servicios profesionales de fotografía que capturan la esencia de su marca y mejoran la narración visual.",
-        "icon": "faCamera"
+        "icon": "faCamera",
+        "fullDescription": "Ofrezco servicios de fotografía profesional que van más allá de simplemente tomar fotos. Mi objetivo es capturar la esencia de su marca o proyecto, creando narrativas visuales que involucren e inspiren a su audiencia.",
+        "features": [
+          "Fotografía de productos",
+          "Cobertura de eventos",
+          "Sesiones de estilo de vida y branding",
+          "Edición y retoque de fotos"
+        ],
+        "benefits": [
+          "Visuales de alta calidad para materiales de marketing",
+          "Imágenes de marca consistentes en todas las plataformas",
+          "Mayor compromiso en redes sociales y sitios web",
+          "Documentación profesional de eventos e hitos"
+        ]
       },
       {
         "title": "Trabajo Freelance",
         "description": "Servicios de desarrollo y diseño flexibles y adaptables para llevar sus proyectos al siguiente nivel.",
-        "icon": "faLaptop"
+        "icon": "faLaptop",
+        "fullDescription": "Como freelancer, ofrezco una amplia gama de servicios de desarrollo y diseño adaptados a sus necesidades específicas. Mi enfoque flexible me permite adaptarme a diversos requisitos de proyectos y entregar resultados de alta calidad.",
+        "features": [
+          "Desarrollo de software personalizado",
+          "Diseño de UI/UX",
+          "Gestión de proyectos",
+          "Consultoría técnica"
+        ],
+        "benefits": [
+          "Soluciones rentables para empresas de todos los tamaños",
+          "Acceso a diversos conjuntos de habilidades y experiencia",
+          "Programación flexible y alcance del proyecto",
+          "Comunicación directa y tiempos de respuesta rápidos"
+        ]
       }
     ]
   },

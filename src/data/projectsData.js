@@ -4,7 +4,7 @@ const projectsData = [
         description: 'BeerHub is a global platform designed for beer enthusiasts to discover, rate, and favorite beers from around the world. Currently in early access, the platform starts with 10 brands from Spain and Portugal, with new countries and regions added weekly.',
         imageUrl: 'https://res.cloudinary.com/dizd9f3ky/image/upload/v1728996380/hb-mu_bezcm8.webp', 
         repoUrl: 'https://github.com/jesusp1490/beer-hub',
-        demoUrl: 'https://beerhub.es/home', 
+        demoUrl: 'https://beer-hub-new.web.app/home', 
         techIcons: [
             'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg',
             'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
